@@ -1,0 +1,290 @@
+@font-face {
+    font-family: 'Stadio';
+    src: url(font/FontsFree-Net-Stadio-Now-Display-Bold-trial.ttf)
+}
+@font-face {
+    font-family: 'raleway';
+    src: url(font/FontsFree-Net-Raleway-Medium.ttf);
+}
+
+* {
+    max-width:2000px;
+    margin: 0 auto; 
+}
+
+main{
+    margin-left:200px;
+    margin-right:200px;
+}
+
+/* Styles pour le header */
+.header {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff; 
+    color: black; 
+  }
+  
+  /* Styles pour le logo et les icônes */
+  .header__logo {
+    text-align: center; 
+    position: relative; 
+  }
+  
+  .header__logo img {
+    max-width: 80%; 
+  }
+  
+  .header__icons {
+    position: absolute;
+    top: 10px; 
+    right: 250px; 
+    display: flex;
+  }
+  
+  .img__icons {
+    width: 40px; 
+    margin-left: 10px; 
+  }
+  
+  /* Styles pour la navigation */
+  .header__nav {
+    margin-bottom: 15px; 
+    text-align: center; 
+  }
+  
+  .nav__list {
+    font-family: 'stadio', sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .nav__item {
+    margin-right: 20px;
+  }
+  
+  .nav__link {
+    text-decoration: none;
+    color: inherit;
+    
+  }
+  
+  /* Styles pour la barre transversale */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header + main {
+    border-top: 3px solid black; /* Barre transversale */
+    padding-top: 20px;
+  }
+
+  /*bannière*/
+  .eight-column-section {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 30px;
+    margin-bottom:40px ;
+    height:130px;
+    align-items: center;
+    
+  }
+  
+  .column {
+    width: calc(12.5% - 20px); /* Pour 8 colonnes avec espacement de 20px entre elles */
+    margin-right: 20px;
+    
+  }
+  .small-img-1{
+    width:150px;
+    display:block;
+    margin:0 auto;
+    margin-top:-20px;
+  }
+  .small-img{
+    width:80px;
+    display:block;
+    margin:0 auto;
+  }
+
+  .small-icon {
+    width: 80px; 
+    display: block; 
+    margin: 0 auto; 
+  }
+  
+  .text {
+    font-family: 'raleway', sans-serif;
+    text-align: center; 
+  }
+
+  /*product*/
+  .product-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+  
+  .product {
+    width: calc(20% - 15px); /* Pour 4 colonnes avec espacement de 20px entre elles */
+    margin-bottom: 20px;
+    background-color: #f9f9f9; 
+    padding: 20px;
+    text-align: center;
+    
+  }
+  
+  .product img {
+    width: 300px;
+    height:250px;
+    object-fit: cover;
+   
+    /*  styles pour les images des produits */
+  }
+  
+  .product-rating {
+    font-size: 24px;
+    /* styles avis client */
+  }
+  
+  .product-description {
+    font-family: 'raleway', sans-serif;
+    
+  }
+  
+  .product-price {
+    font-family: 'raleway', sans-serif;
+    font-weight: bold;
+    /*  styles prix du produit si besoin */
+  }
+
+/*explication de livraison et paiement */
+.three-column-section {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin-top: 30px;
+  }
+  
+  .column-section {
+    width:30%;
+    display: flex;
+    align-items: center; 
+    margin: 10px; 
+    text-align: center;
+    background:#77b099;
+  }
+  
+  .icon__img {
+    width: 50px;
+    height: auto; 
+    margin-right: 10px; 
+    padding-top: 5px;
+  }
+  
+  .column__text {
+    font-family: 'raleway', sans-serif;
+  }
+
+  /*footer*/
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: black;
+    padding: 20px;
+    background:#f9dacd;
+    float:none;
+    clear: both;
+    position:absolute;
+    border-bottom: 0px;
+    text-align: center;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin-right: 20px;
+    
+  }
+  
+  .footer-column:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-column-title {
+    font-family: 'raleway', sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 5px;
+    text-decoration: none;
+    color:black;
+  }
+  
+  .footer-links a {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .newsletter {
+    margin-bottom: 40px;
+  }
+  
+  .newsletter-input {
+    width: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: bottom 15px;
+  }
+  
+  .newsletter-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .logo-asso {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-top: 50px;
+  }
+  
+  .map-image {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .footer p {
+    font-family: 'raleway', sans-serif;
+    margin: 5px 0;
+  }
